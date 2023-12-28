@@ -12,11 +12,11 @@ public class View {
         while(mark){
             printActions();
             switch(Integer.parseInt(scanner.nextLine())){
-                case 1 -> animalController.createAnimal(); // +
+                case 1 -> animalController.createAnimal(); 
                 case 2 -> animalController.showAnimalCommands();
                 case 3 -> animalController.addAnimalCommand();
                 case 4 -> System.out.println("Общее кол-во животных: " + AnimalController.AnimalCounter.getCounter());
-                case 5 -> animalController.showAnimals(); //+
+                case 5 -> animalController.showAnimals(); 
                 default -> mark = false;
             }
         }
